@@ -32,7 +32,7 @@ public class DAOEstudiante implements IBaseDatos<Estudiante>{
         try {
             connection = Conexion.getConnection();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DAOEstudiante.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             PreparedStatement preparedStmt = null;

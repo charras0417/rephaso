@@ -5,7 +5,7 @@
  */
 package edu.co.sergio.mundo.dao;
 
-import edu.co.sergio.mundo.vo.Departamento;
+
 import edu.co.sergio.mundo.vo.Escuela;
 import java.net.URISyntaxException;
 import java.sql.Connection;
@@ -31,7 +31,7 @@ public class DAOEscuela implements IBaseDatos<Escuela>  {
         try {
             connection = Conexion.getConnection();
         } catch (URISyntaxException ex) {
-            Logger.getLogger(DepartamentoDAO.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(DAOEscuela.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             Statement st = connection.createStatement();

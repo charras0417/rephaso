@@ -12,26 +12,15 @@
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
-    <servlet>
-        <servlet-name>Hello</servlet-name>
-        <servlet-class>com.crunchify.jsp.servlet.HelloCrunchify</servlet-class>
-    </servlet>
-    
+       
     <servlet>
         <servlet-name>Escuela</servlet-name>
         <servlet-class>com.crunchify.jsp.servlet.ServletEscuela</servlet-class>
     </servlet>
     
-  
     <servlet-mapping>
-        <servlet-name>Hello</servlet-name>
-        <url-pattern>/CrunchifyServlet</url-pattern>
-    </servlet-mapping>
-
-      <servlet-mapping>
         <servlet-name>Escuela</servlet-name>
         <url-pattern>/Escuela</url-pattern>
     </servlet-mapping>
-
 
 </web-app>
