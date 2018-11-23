@@ -14,15 +14,7 @@ public class Escuela {
     private int codigo;
     private String nombre;
 
-    public Escuela(int codigo, String nombre) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-    }
-
-    public Escuela() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+ 
     
     public int getCodigo() {
         return codigo;
