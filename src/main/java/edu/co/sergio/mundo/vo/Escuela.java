@@ -11,9 +11,6 @@ package edu.co.sergio.mundo.vo;
  */
 public class Escuela {
 
-    public static void add(Escuela registro) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     private int codigo;
     private String nombre;
 
