@@ -45,30 +45,38 @@ body {
 
 
         <div align="center" style="margin-top: 50px;">
-            <table style="width:100%">
-                <tr>
+            
+            <%
+              if(request.getAttribute("estudiantes")!=null){
+            %>      
+              <table style="width:100%">
+               <tr>
                     <th>Codigo</th>
                     <th>Nombre</th> 
-                    <th>Codigo Escuela</th>
-                    <th>Beca</th>
-                </tr>
-                <tr>
-                    <td>1234</td>
-                    <td>Smith</td> 
-                    <td>2345</td>
-                     <td>true</td>
-                </tr>
+                    <th>Escuela</th>
+              </tr>
                 
-                <tr>
-                    <td>1234</td>
-                    <td>Smith</td> 
-                    <td>2345</td>
-                     <td>true</td>
-                </tr>
-                
-                
-                
-            </table>
+              <%
+              List<Estudiante> estudiantes  = (List<Estudiante>)request.getAttribute("estudiantes");  
+               for (Estudiante estudiante : estudiantes) {
+             %>
+             
+               <tr>
+                  <td><%=estudiante.getCodigo()%></td>
+                  <td><%=estudiante.getNombre()%></td> 
+                  <td><%=estudiante.getEscuela()%></td>
+              </tr>
+             
+             <%
+             }
+             %>
+               
+                </table>
+               
+            <%
+              }
+            %>   
+            
         </div>
     
     
