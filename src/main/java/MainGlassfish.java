@@ -9,7 +9,7 @@ import org.glassfish.embeddable.GlassFishRuntime;
 import org.glassfish.embeddable.archive.ScatteredArchive;
 
 public class MainGlassfish {
-
+// https://github.com/Jkize/prueba/blob/master/src/main/java/Base%20de%20Datos.sql
 	public static void main(String[] args) throws Exception {
 	   String webappDirLocation = "src/main/webapp/";
 
