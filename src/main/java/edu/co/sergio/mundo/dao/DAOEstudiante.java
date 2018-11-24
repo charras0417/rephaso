@@ -37,7 +37,7 @@ public class DAOEstudiante implements IBaseDatos<Estudiante>{
         try {
             PreparedStatement preparedStmt = null;
             preparedStmt = connection.prepareStatement(query);
-	    preparedStmt.setInt (1, codEscuela);
+	     
             ResultSet rs = preparedStmt.executeQuery();
             int id = 0;
             String nombre = null, escuela = null;
