@@ -27,7 +27,7 @@ public class DAOEstudiante implements IBaseDatos<Estudiante>{
   
     public List<Estudiante> findAllByEscuela(int codEscuela) {
         List<Estudiante> estudiantes = null;
-        String query = "select *from Estudiante,Escuela where Estudiante.codEscuela=Escuela.codigo;";
+        String query = "select Estudiante.codigo, estudiante.nombre from Estudiante,Escuela where Estudiante.codEscuela=Escuela.codigo;";
         Connection connection = null;
         try {
             connection = Conexion.getConnection();
@@ -54,8 +54,7 @@ public class DAOEstudiante implements IBaseDatos<Estudiante>{
                 nombre = rs.getString("nombre");
                 estudiante.setNombre(nombre);
                 
-                escuela = rs.getString("escuela");
-                estudiante.setEscuela(escuela);
+                estudiante.setEscuela("osfsd");
                 
                 estudiantes.add(estudiante);
             }
