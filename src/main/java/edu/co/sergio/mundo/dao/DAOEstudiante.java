@@ -27,7 +27,7 @@ public class DAOEstudiante implements IBaseDatos<Estudiante>{
   
     public List<Estudiante> findAllByEscuela(int codEscuela) {
         List<Estudiante> estudiantes = null;
-        String query = "select * from Estudiante";
+        String query = "select *from Estudiante,Escuela where Estudiante.codEscuela=Escuela.codigo;";
         Connection connection = null;
         try {
             connection = Conexion.getConnection();
