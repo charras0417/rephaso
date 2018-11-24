@@ -29,8 +29,7 @@ public class ServletEscuela extends  HttpServlet{
          request.setAttribute("escuelas", escuelas);
          //Redireccionando la informacion
          RequestDispatcher redireccion = request.getRequestDispatcher("index.jsp");
-         redireccion.forward(request, response);      
-      
+         redireccion.forward(request, response);   
      }
      
      
@@ -42,7 +41,6 @@ public class ServletEscuela extends  HttpServlet{
          //Redireccionando la informacion
          RequestDispatcher redireccion = request.getRequestDispatcher("index.jsp");
          redireccion.forward(request, response);      
-         
       
      }
 }
